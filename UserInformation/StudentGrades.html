@@ -259,10 +259,10 @@
     <div class="container card-shadow p-5 mt-5">
         <div>
 <form Id="AcademicYear" action="../StudentGrades/CreateModel" method="post">                <label id="lblAcadmic" style="font-size: medium;">Academic Year : </label>
-<input data-val="true" data-val-number="The field AcademicYearID must be a number." id="AcademicYearID" name="AcademicYearID" required="required" type="text" /><script>
+<input data-val="true" data-val-number="The field AcademicYearID must be a number." id="AcademicYearID" name="AcademicYearID" value="2023/2024" required="required" type="text" /><script>
 	kendo.syncReady(function(){jQuery("#AcademicYearID").kendoDropDownList({"dataSource":{"transport":{"read":{"url":"../StudentGrades/GetAllStudentAcademicYears"},"prefix":""},"schema":{"errors":"Errors"}},"dataTextField":"Text","dataValueField":"Value","index":0});});
 </script>                <label id="lblExamRound" style="font-size: medium;">Exam Round : </label>
-<input data-val="true" data-val-number="The field ExamRoundId must be a number." data-val-required="The ExamRoundId field is required." disabled="disabled" id="_ExamRoundId" name="_ExamRoundId" type="text" value="0" /><script>
+<input data-val="true" data-val-number="The field ExamRoundId must be a number." data-val-required="The ExamRoundId field is required." disabled="disabled" id="_ExamRoundId" name="_ExamRoundId" type="text" value="January" /><script>
 	kendo.syncReady(function(){jQuery("#_ExamRoundId").kendoDropDownList({"dataSource":{"transport":{"read":{"url":"../StudentGrades/GetExamRoundPerAcademicYear","data":GetExamRound},"prefix":""},"serverFiltering":true,"filter":[],"schema":{"errors":"Errors"}},"dataTextField":"Text","autoBind":false,"dataValueField":"Value","cascadeFrom":"AcademicYearID"});});
 </script>                <button type="submit" class="default-big-btn" style="margin-top : 30px; ">Display</button>
 </form>        </div>
