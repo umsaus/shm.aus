@@ -1,0 +1,554 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="">
+<head>
+   
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url" content="https://ums.asu.edu.eg/" />
+    <meta property="og:image" content="../images/logoums (1).png" />
+    <meta property="og:description" content="Digital Management System of Ain Shams University" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Grades Page | ASU Smart Campus </title>
+    
+
+<!-- Normalize CSS -->
+<link rel="stylesheet" href="../assets/css/EN/normalize.css">
+<!-- Main CSS -->
+<link rel="stylesheet" href="../assets/css/EN/main.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../assets/css/EN/bootstrap.min.css">
+<!-- Animate CSS -->
+<link rel="stylesheet" href="../assets/css/EN/animate.min.css">
+<!-- Font-awesome CSS-->
+<link rel="stylesheet" href="../assets/fontawesome-free-6.1.1-web/css/all.min.css" />
+<link rel="stylesheet" href="../assets/fontawesome-free-6.1.1-web/css/fontawesome.min.css" />
+<!-- Owl Caousel CSS -->
+<link rel="stylesheet" href="../assets/vendor/EN/OwlCarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="../assets/vendor/EN/OwlCarousel/owl.theme.default.min.css">
+<!-- Main Menu CSS -->
+<link rel="stylesheet" href="../assets/css/EN/meanmenu.min.css">
+<!-- nivo slider CSS -->
+<link rel="stylesheet" href="../assets/vendor/EN/slider/css/nivo-slider.css" type="text/css" />
+<link rel="stylesheet" href="../assets/vendor/EN/slider/css/preview.css" type="text/css" media="screen" />
+<!-- Datetime Picker Style CSS -->
+<link rel="stylesheet" href="../assets/css/EN/jquery.datetimepicker.css">
+<!-- Select2 CSS -->
+<link rel="stylesheet" href="../assets/css/EN/select2.min.css">
+<!-- Magic popup CSS -->
+<link rel="stylesheet" href="../assets/css/EN/magnific-popup.css">
+<!-- Switch Style CSS -->
+<link rel="stylesheet" href="../assets/css/EN/hover-min.css">
+<!-- ReImageGrid CSS -->
+<link rel="stylesheet" href="../assets/css/EN/reImageGrid.css">
+<!-- Nouislider Style CSS -->
+<link rel="stylesheet" href="../assets/vendor/EN/noUiSlider/nouislider.min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../assets/css/EN/style.css">
+
+
+
+<link href="../Content/fontawesome-all.css" rel="stylesheet" />
+<!--Kendo-->
+<link href="../Content/kendo/2018.3.1017/kendo.common-bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../Content/kendo/2018.3.1017/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
+<link href="../Content/kendo/2018.3.1017/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+<link href="../Content/kendo/2018.3.1017/kendo.bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../Content/kendo/2018.3.1017/kendo.dataviz.bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!--Kendo custom styles-->
+<style>
+    .k-dropdown .k-state-focused, .k-filebrowser-dropzone, .k-list > .k-state-hover, .k-listbox .k-item:hover:not(.k-state-disabled), .k-mobile-list .k-edit-label.k-check:active, .k-mobile-list .k-item > .k-label:active, .k-mobile-list .k-item > .k-link:active, .k-mobile-list .k-recur-view .k-check:active, .k-pager-wrap .k-link:hover, .k-scheduler .k-scheduler-toolbar ul li.k-state-hover, .k-splitbar-horizontal-hover:hover, .k-splitbar-vertical-hover:hover, .k-state-hover, .k-state-hover:hover {
+        background-color: #0021473d;
+    }
+    .k-list > .k-state-focused.k-state-selected, .k-listview > .k-state-focused.k-state-selected, .k-state-focused.k-state-selected, td.k-state-focused.k-state-selected {
+        box-shadow: inset 0 0 10px 3px #002147;
+    }
+    .k-draghandle.k-state-selected:hover, .k-ghost-splitbar-horizontal, .k-ghost-splitbar-vertical, .k-list > .k-state-highlight, .k-list > .k-state-selected, .k-marquee-color, .k-panel > .k-state-selected, .k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-today.k-state-selected, .k-state-selected, .k-state-selected:link, .k-state-selected:visited, .k-tool.k-state-selected {
+        background-color: #002147;
+        border-color: #002147;
+    }
+    .k-link:link, .k-link:visited, .k-nav-current.k-state-hover .k-link {
+        color: #002147;
+    }
+</style>
+<script src="../assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="../Scripts/modernizr-2.8.3.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="../Scripts/kendo/2018.3.1017/jszip.min.js"></script>
+<script src="../Scripts/kendo/2018.3.1017/kendo.all.min.js"></script>
+<script src="../Scripts/kendo/2018.3.1017/kendo.dropdownlist.min.js"></script>
+<script src="../Scripts/kendo/2018.3.1017/kendo.aspnetmvc.min.js"></script>
+<script src="../Scripts/modernizr-2.8.3.js"></script>
+<script src="../Scripts/kendo.modernizr.custom.js"></script>
+
+
+    <!-- BEGIN SWEETALERT -->
+    <link href="../assets/SweetAlert/sweetalert2.min.css" rel="stylesheet" />
+    <script src="../assets/SweetAlert/sweetalert2.min.js"></script>
+    <script src="../assets/js/modernizr-2.8.3.min.js"></script>
+
+    <script src="../assets/SweetAlert/sweetalert.min.js"></script>
+    <!-- Owl Cauosel JS -->
+    <script src="../assets/vendor/EN/OwlCarousel/owl.carousel.min.js" type="text/javascript"></script>
+</head>
+<!-- Head End -->
+<!-- Body Start -->
+
+<body dir="ltr">
+    <div id="preloader"></div>
+
+    <div id="wrapper" style="position: relative;">  
+
+        <!-- Header Start -->
+
+<style>
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+</style>
+<link href="../assets/css/Menu.css" rel="stylesheet" />
+    <header>
+        <div id="header1" class="header2-area">
+            
+
+<script src="../assets/js/Language.js"></script>
+<style>
+    .main-menu-area .header-search{
+        margin:0px 0px !important;
+    }
+</style>
+<!-- TopHeader Start -->
+<div class="header-top-area">
+    <div class="container">
+        <div class="top-bar-border">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                    <div class="header-top-left">
+                        <ul class="Mobile-Hidden">
+                            <li><img style="height:25px;" src="../images/arms_of_Egypt_(Official).svg" /></li>
+                            <li style="text-transform:capitalize;"><a href="../App/VideosSection">Guiding Videos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="header-top-right">
+                        <ul class="main-menu-area">
+                            <li>
+                                <div class="header-search d-none d-lg-block">
+                                    <form action="/Search/GetSearchResult" method="GET">
+                                        <input type="text" class="search-form" name="UserQuery" placeholder="Search" required="">
+                                        <a href="#" class="search-button" id="search-button"></a>
+                                    </form>
+                                </div>
+                            </li>
+                                <li>
+                                    <a class="login-btn-area" href="../App/Logout" id="logout-button"> Logout</a>
+                                </li>
+
+
+                                <li><a class="login-btn-area" onclick="SelectedIndexChanged('ar'); location.reload();" href="#"> <img src="../images/Flags/eg.png" alt="عربى">عربى</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TopHeader End -->
+
+
+            <!-- MenuHeader Start -->
+            <div class="main-menu-area bg-textPrimary" id="sticker">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-3 col-md-3">
+                                <a href="/"><img class="img-responsive" src="../images/logoums (1).png" alt="logo"></a>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7">
+                            <nav id="desktop-nav">
+                                <ul style="text-align:center;">
+                                    <li class=""><a href = "../UserInformation/MyAccount">    <span class="title">Home</span></a></li><li class=""><a href = "/Services">    <span class="title">General Services</span></a></li><li class=""><a href="javascript:;"> <span>Study services</span><span class="nav-icon nav-arrow"></span></a> <ul class="mega-menu-area sub-mega-menu" ><li><a href = "../UserInformation/CurrentCourse">    <span class="title">Current Course</span></a><a href = "/Schedule">    <span class="title">Schedule</span></a><a href = "../UserInformation/AllStudentCourseQRs">    <span class="title">QR Codes</span></a><a href = "/YearWorkGradesForStudent">    <span class="title">Yearwork Grades</span></a><a href = "../StudentGrades">    <span class="title">Grades</span></a></li><li><a href = "/RegisterElectiveCourse/Registration">    <span class="title">Course Registration</span></a><a href = "/OpenCourseRequest">    <span class="title">Open Course Request</span></a><a href = "/WithdrawCourseRequest">    <span class="title">Course Withdraw</span></a><a href = "/Home../Appeal">    <span class="title">Appeal</span></a><a href = "/StudentGraduationRequirement">    <span class="title">Graduation Requirement</span></a></li><li><a href = "/Bifurcation">    <span class="title">Bifurcation </span></a><a href = "/Awards">    <span class="title">Awards</span></a><a href = "../UserInformation/StudentWarnings">    <span class="title">Academic Warning</span></a><a href = "/MilitaryEducationCourseRegistration">    <span class="title">Military Education Course Registration</span></a><a href = "/MilitaryCoursePreview">    <span class="title">Military Course Preview</span></a></ul></li><li class=""><a href="javascript:;"> <span>Complaints / Suggestions</span><span class="nav-icon nav-arrow"></span></a><ul><li class=" "><a href = "/Complaint/ComplaintList">    <span class="title">Complaints / Suggestions </span></a></li><li class=" "><a href = "/GeneralQuestionnaire">    <span class="title">Your Opinion Matters </span></a></li></ul></li><li class=""><a href="javascript:;"> <span>Payments record</span><span class="nav-icon nav-arrow"></span></a><ul><li class=" "><a href = "/Home/Payment">    <span class="title">Pending Payments </span></a></li><li class=" "><a href = "/Home/History">    <span class="title">Payment History </span></a></li></ul></li><li class=""><a href = "/InnerAnnouncement">    <span class="title">News</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-xl-3 col-lg-2 col-md-2">
+                            <nav id="desktop-nav">
+                                <ul class="header-user">
+                                    <li >
+                                        <a href="#" dir="ltr" >عمر مجدى امام حسب النبى</a>
+                                        <ul>
+                                            <li><a href="../UserInformation">My Profile</a></li>
+                                            <li><a href="../App/Logout">Logout</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MenuHeader End -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">عمر مجدى امام حسب النبى</a>
+                                            <ul>
+                                                <li><a href="../UserInformation">My Profile</a></li>
+                                                <li><a href="../App/Logout">Logout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a href = "../UserInformation/MyAccount">    <span class="title">Home</span></a></li><li class=""><a href = "/Services">    <span class="title">General Services</span></a></li><li class=""><a href="javascript:;"> <span>Study services</span><span class="nav-icon nav-arrow"></span></a> <ul class="mega-menu-area sub-mega-menu" ><li><a href = "../UserInformation/CurrentCourse">    <span class="title">Current Course</span></a><a href = "/Schedule">    <span class="title">Schedule</span></a><a href = "../UserInformation/AllStudentCourseQRs">    <span class="title">QR Codes</span></a><a href = "/YearWorkGradesForStudent">    <span class="title">Yearwork Grades</span></a><a href = "../StudentGrades">    <span class="title">Grades</span></a></li><li><a href = "/RegisterElectiveCourse/Registration">    <span class="title">Course Registration</span></a><a href = "/OpenCourseRequest">    <span class="title">Open Course Request</span></a><a href = "/WithdrawCourseRequest">    <span class="title">Course Withdraw</span></a><a href = "/Home../Appeal">    <span class="title">Appeal</span></a><a href = "/StudentGraduationRequirement">    <span class="title">Graduation Requirement</span></a></li><li><a href = "/Bifurcation">    <span class="title">Bifurcation </span></a><a href = "/Awards">    <span class="title">Awards</span></a><a href = "../UserInformation/StudentWarnings">    <span class="title">Academic Warning</span></a><a href = "/MilitaryEducationCourseRegistration">    <span class="title">Military Education Course Registration</span></a><a href = "/MilitaryCoursePreview">    <span class="title">Military Course Preview</span></a></ul></li><li class=""><a href="javascript:;"> <span>Complaints / Suggestions</span><span class="nav-icon nav-arrow"></span></a><ul><li class=" "><a href = "/Complaint/ComplaintList">    <span class="title">Complaints / Suggestions </span></a></li><li class=" "><a href = "/GeneralQuestionnaire">    <span class="title">Your Opinion Matters </span></a></li></ul></li><li class=""><a href="javascript:;"> <span>Payments record</span><span class="nav-icon nav-arrow"></span></a><ul><li class=" "><a href = "/Home/Payment">    <span class="title">Pending Payments </span></a></li><li class=" "><a href = "/Home/History">    <span class="title">Payment History </span></a></li></ul></li><li class=""><a href = "/InnerAnnouncement">    <span class="title">News</span></a></li>                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!--Inner Header Start -->
+
+<!-- Inner Page Banner Area Start Here -->
+<div class="inner-page-banner-area" style="background-image: url('../assets/images/banner1.jpg');">
+    <div class="container" style="max-height: 0px !important;">
+        <div class="pagination-area" style="margin-top:15rem">
+            <h1>Grades Page</h1>
+            <ul>
+                <li><a href="/">Home</a> -</li>
+                <li>Grades Page</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Inner Page Banner Area End Here -->
+        <!-- PageBody Start -->
+        
+
+<style>
+
+    .faq-body, .faq-item {
+        background-color: white !important;
+    }
+
+    .price-table-box2 {
+        border-radius: 20px;
+        color: #002147 !important;
+        font-size: 25px !important;
+    }
+
+        .price-table-box2 span {
+            letter-spacing: 0px !important;
+        }
+
+    .hvr-float-shadow {
+        margin-bottom: 25px;
+    }
+</style>
+<div>
+    <div class="container card-shadow p-5 mt-5">
+        <div>
+<form Id="AcademicYear" action="../StudentGrades/CreateModel" method="post">                <label id="lblAcadmic" style="font-size: medium;">Academic Year : </label>
+<input data-val="true" data-val-number="The field AcademicYearID must be a number." id="AcademicYearID" name="AcademicYearID" required="required" type="text" /><script>
+	kendo.syncReady(function(){jQuery("#AcademicYearID").kendoDropDownList({"dataSource":{"transport":{"read":{"url":"../StudentGrades/GetAllStudentAcademicYears"},"prefix":""},"schema":{"errors":"Errors"}},"dataTextField":"Text","dataValueField":"Value","index":0});});
+</script>                <label id="lblExamRound" style="font-size: medium;">Exam Round : </label>
+<input data-val="true" data-val-number="The field ExamRoundId must be a number." data-val-required="The ExamRoundId field is required." disabled="disabled" id="_ExamRoundId" name="_ExamRoundId" type="text" value="0" /><script>
+	kendo.syncReady(function(){jQuery("#_ExamRoundId").kendoDropDownList({"dataSource":{"transport":{"read":{"url":"../StudentGrades/GetExamRoundPerAcademicYear","data":GetExamRound},"prefix":""},"serverFiltering":true,"filter":[],"schema":{"errors":"Errors"}},"dataTextField":"Text","autoBind":false,"dataValueField":"Value","cascadeFrom":"AcademicYearID"});});
+</script>                <button type="submit" class="default-big-btn" style="margin-top : 30px; ">Display</button>
+</form>        </div>
+    </div>
+    
+    <div class="container">
+            <section class="faq_area bg_color sec_pad">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tab-content faq_content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="purchas" role="tabpanel" aria-labelledby="purchas-tab">
+                                    <h3 id="CurrentYearID" class="f_p f_size_22 f_500 t_color3 mb_20">
+                                        
+
+                                        
+                                        <hr />
+                                        Academic Year Grades 2023-2024,
+
+                                    </h3>
+
+                                    <div id="accordion">
+
+                                                <div class="container">
+                                                    <div class="faq-items" id="accordionFaq">
+                                                        <div class="row">
+                                                            <div class="faq-item">
+                                                                <div class="faq-title" id="header_1">
+                                                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">
+                                                                        <span class="faq-count">1</span>
+
+                                                                        Grades Of First Semester[Grade:C+                                                  ] [ GPA :2.805] 
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="collapse_1" class="accordion-collapse collapse" aria-labelledby="header_1" data-bs-parent="#accordionFaq">
+                                                                    <div class="faq-body">
+                                                                        <div class="row">
+                                                                                <div class="row">
+                                                                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 hvr-float-shadow">
+                                                                                                <div class="price-table-box2">
+                                                                                                    <h5 class="">Course:   [إنج111] Introduction to English literature  </h5>
+                                                                                                        <div class="col-md-12">
+                                                                                                             <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Course Hours :</h5> </div>  <div class='col-md-4'><p style =''>3.00</p></div></div>
+                                                                                                        </div>
+
+                                                                                                    <div class="col-md-12">
+ <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Grade :</h5> </div>  <div class='col-md-4'><p style =''>B         </p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Degree :</h5> </div>  <div class='col-md-4'><p style =''>76.00</p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Points :</h5> </div>  <div class='col-md-4'><p style =''>0.00</p></div></div>                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 hvr-float-shadow">
+                                                                                                <div class="price-table-box2">
+                                                                                                    <h5 class="">Course:   [إنج112] English Writing Skills  </h5>
+                                                                                                        <div class="col-md-12">
+                                                                                                             <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Course Hours :</h5> </div>  <div class='col-md-4'><p style =''>3.00</p></div></div>
+                                                                                                        </div>
+
+                                                                                                    <div class="col-md-12">
+ <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Grade :</h5> </div>  <div class='col-md-4'><p style =''>B         </p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Degree :</h5> </div>  <div class='col-md-4'><p style =''>79.00</p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Points :</h5> </div>  <div class='col-md-4'><p style =''>2.00</p></div></div>                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 hvr-float-shadow">
+                                                                                                <div class="price-table-box2">
+                                                                                                    <h5 class="">Course:   [إنج113] Arabic Editing Skills  </h5>
+                                                                                                        <div class="col-md-12">
+                                                                                                             <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Course Hours :</h5> </div>  <div class='col-md-4'><p style =''>3.00</p></div></div>
+                                                                                                        </div>
+
+                                                                                                    <div class="col-md-12">
+ <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Grade :</h5> </div>  <div class='col-md-4'><p style =''>A        </p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Degree :</h5> </div>  <div class='col-md-4'><p style =''>88.00</p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Points :</h5> </div>  <div class='col-md-4'><p style =''>1.30</p></div></div>                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 hvr-float-shadow">
+                                                                                                <div class="price-table-box2">
+                                                                                                    <h5 class="">Course:   [إنج114] Critical Thinking  </h5>
+                                                                                                        <div class="col-md-12">
+                                                                                                             <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Course Hours :</h5> </div>  <div class='col-md-4'><p style =''>2.00</p></div></div>
+                                                                                                        </div>
+
+                                                                                                    <div class="col-md-12">
+ <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Grade :</h5> </div>  <div class='col-md-4'><p style =''>B+         </p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Degree :</h5> </div>  <div class='col-md-4'><p style =''>81.00</p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Points :</h5> </div>  <div class='col-md-4'><p style =''>1.00</p></div></div>                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 hvr-float-shadow">
+                                                                                                <div class="price-table-box2">
+                                                                                                    <h5 class="">Course:   [إنج115] Fundamentals of English Language/Grammar </h5>
+                                                                                                        <div class="col-md-12">
+                                                                                                             <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Course Hours :</h5> </div>  <div class='col-md-4'><p style =''>2.00</p></div></div>
+                                                                                                        </div>
+
+                                                                                                    <div class="col-md-12">
+ <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Grade :</h5> </div>  <div class='col-md-4'><p style =''>B+        </p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Degree :</h5> </div>  <div class='col-md-4'><p style =''>82.00</p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Points :</h5> </div>  <div class='col-md-4'><p style =''>1.70</p></div></div>                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 hvr-float-shadow">
+                                                                                                <div class="price-table-box2">
+                                                                                                    <h5 class="">Course:   [إنج117] Food Studies and Politics </h5>
+                                                                                                        <div class="col-md-12">
+                                                                                                             <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Course Hours :</h5> </div>  <div class='col-md-4'><p style =''>2.00</p></div></div>
+                                                                                                        </div>
+
+                                                                                                    <div class="col-md-12">
+ <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Grade :</h5> </div>  <div class='col-md-4'><p style =''>C+         </p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Degree :</h5> </div>  <div class='col-md-4'><p style =''>70.00</p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Points :</h5> </div>  <div class='col-md-4'><p style =''>0.00</p></div></div>                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 hvr-float-shadow">
+                                                                                                <div class="price-table-box2">
+                                                                                                    <h5 class="">Course:   [أور100] اللغة الأوربية (1) </h5>
+                                                                                                        <div class="col-md-12">
+                                                                                                             <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Course Hours :</h5> </div>  <div class='col-md-4'><p style =''>2.00</p></div></div>
+                                                                                                        </div>
+
+                                                                                                    <div class="col-md-12">
+ <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Grade :</h5> </div>  <div class='col-md-4'><p style =''>Pass      </p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Degree :</h5> </div>  <div class='col-md-4'><p style =''>88.00</p></div></div> <div class='row'> <div class='col-md-8'>  <h5 style = '8' > Points :</h5> </div>  <div class='col-md-4'><p style =''>0.00</p></div></div>                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+    </div>
+    
+
+    <script>
+        function GetExamRound(e) {
+            return {
+                AcademicYearID: $("#AcademicYearID").val()
+            }
+        }
+    </script>
+
+
+        <!-- PageBody End -->
+
+            <div id="footer-div">
+                    <div class="endpage-divider"></div>
+                
+
+<style>
+    .footer-bottom-social li {
+      display: inline-block;
+      font-size: 14px;
+      border-right: 1px solid #BDBDBD;
+      margin-right: 15px;
+      padding-right: 15px;
+    }
+    .footer-bottom-social li a,.footer-bottom-social li{
+        color: white !important;
+    }
+    .footer-sticky{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    }
+</style>
+
+<!-- FooterBottom Start -->
+<div class="footer-area-bottom ">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <p class="text-white font_18">&copy; FCIS-AinShams 2020 - 2024 &nbsp; </p>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                <ul class="footer-bottom-social">
+                    <li><a href="../App/TermsAndConditions">Terms of Use</a></li>
+                    <li><a href="../App/Privacy">Privacy Policy</a></li>
+                    <li><a href="../App/FAQ">FAQ</a></li>
+                    <li><a href="../App/CustomerServiceCharter">Customer Service Charter</a></li>
+                        <li>Number O fVisits: 678592</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FooterBottom End -->
+
+            </div>
+
+    </div>
+
+    
+
+    <script src="../assets/js/plugins.js" type="text/javascript"></script>
+    <!-- Bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- WOW JS -->
+    <script src="../assets/js/wow.min.js"></script>
+    <!-- Nivo slider js -->
+    <script src="../assets/vendor/EN/slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="../assets/vendor/EN/slider/home.js" type="text/javascript"></script>
+    <!-- Meanmenu Js -->
+    <script src="../assets/js/jquery.meanmenu.min.js" type="text/javascript"></script>
+    <!-- Srollup js -->
+    <script src="../assets/js/jquery.scrollUp.min.js" type="text/javascript"></script>
+    <!-- jquery.counterup js -->
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/waypoints.min.js"></script>
+    <!-- Countdown js -->
+    <script src="../assets/js/jquery.countdown.min.js" type="text/javascript"></script>
+    <!-- Isotope js -->
+    <script src="../assets/js/isotope.pkgd.min.js" type="text/javascript"></script>
+    <!-- Select2 Js -->
+    <script src="../assets/js/select2.min.js" type="text/javascript"></script>
+    <!-- Nouislider Js -->
+    <script src="../assets/vendor/EN/noUiSlider/nouislider.min.js" type="text/javascript"></script>
+    <!-- Validator js -->
+    <script src="../assets/js/validator.min.js" type="text/javascript"></script>
+    <!-- Magic Popup js -->
+    <script src="../assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <!-- Gridrotator js -->
+    <script src="../assets/js/jquery.gridrotator.js" type="text/javascript"></script>
+    <!-- Custom Js -->
+    <script src="../assets/js/main.js" type="text/javascript"></script>
+    <script>
+         $(document).ready(function () {
+            var tempdataval = ``
+            if (tempdataval != null && tempdataval != '')
+            {
+                Swal.fire({
+                    icon: 'error',
+                   // title: 'Error',
+                    text: tempdataval,
+                })
+            }
+
+            var tempsuccess = ``
+            if (tempsuccess != null && tempsuccess != '')
+            {
+                Swal.fire({
+                    icon: 'success',
+                   // title: 'Success',
+					text: tempsuccess,
+                })
+            }
+            //textToSpeech()
+        })
+    </script>
+
+    <script src="../Scripts/jquery.validate.min.js"></script>
+
+    <script src="../Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    
+
+
+</body>
+<!-- Body End -->
+</html>
+<script>
+
+    function generateUrl(url, params) {
+        var i = 0, key;
+        for (key in params) {
+            if (i === 0) {
+                url += "?";
+            } else {
+                url += "&";
+            }
+            url += key;
+            url += '=';
+            url += params[key];
+            i++;
+        }
+        return url;
+    }
+</script>
